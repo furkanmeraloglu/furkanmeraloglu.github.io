@@ -1,17 +1,35 @@
 /* Header Styling Start */
 .nav-item .nav-link {
-    color: #202844;
+    color: white !important;
     font-size: large;
 }
-
+.nav-item .nav-link:hover{
+    color: #222944 !important;
+    transition: ease 0.5s;
+}
+#toggler:hover{
+    color: #222944 !important;
+    transition: ease 0.5s;
+}
+.fab:hover{
+    color: #222944 !important;
+    transition: ease 0.5s;
+}
+.navbar-light {
+    color: white;
+}
 .navbar.sticky{
     color: white !important;
     background: #3d5972;
-    transition: 0.5s;
+    transition: 0.8s;
 }
 .navbar.sticky .nav-item .nav-link{
     color: white;
 }
+.navbar-toggler{
+    color: white !important;
+}
+
 html,
 body,
 header,
