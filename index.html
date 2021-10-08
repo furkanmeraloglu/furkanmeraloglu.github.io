@@ -1,168 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Material Design for Bootstrap</title>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>Furkan Meraloğlu</title>
     <!-- MDB icon -->
-    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.png" type="image/x-icon"/>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"/>
     <!-- Google Fonts Roboto -->
     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
     />
     <!-- MDB -->
-    <link rel="stylesheet" href="css/mdb.min.css" />
-  </head>
-  <body>
-  <header>
+    <link rel="stylesheet" href="css/mdb.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+</head>
+<body>
+<!-- Navigation Part -->
+
+<header>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <!-- Container wrapper -->
-      <div class="container-fluid">
-        <!-- Toggle button -->
-        <button
-                class="navbar-toggler"
-                type="button"
-                data-mdb-toggle="collapse"
-                data-mdb-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-        >
-          <i class="fas fa-bars"></i>
-        </button>
+    <nav class="navbar navbar-expand-lg navbar-light d-lg-block fixed-top" style="z-index: 2000;">
+        <!-- Container wrapper -->
+        <div class="container">
+            <!-- Toggle button -->
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+                <i class="fas fa-bars" style="color: #505050"></i>
+            </button>
+            <!-- Toggle button -->
 
-        <!-- Collapsible wrapper -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- Navbar brand -->
-          <a class="navbar-brand mt-2 mt-lg-0" href="#">
-            <img
-                    src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png"
-                    height="15"
-                    alt=""
-                    loading="lazy"
-            />
-          </a>
-          <!-- Left links -->
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Dashboard</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
-            </li>
-          </ul>
-          <!-- Left links -->
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Menu Start -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kimim?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ne Yapıyorum?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ne Yazdım?</a>
+                    </li>
+                </ul>
+                <!-- Menu End -->
+            </div>
+            <!-- Collapsible wrapper -->
+
+            <!-- Social Media Links Start -->
+            <div class="d-flex align-items-center">
+                <!-- Icon -->
+                <a class="text-reset me-3" href="https://github.com/furkanmeraloglu" target="_blank">
+                    <i class="fab fa-lg fa-github"></i>
+                </a>
+                <a class="text-reset me-3" href="mailto:furkanmeraloglu@gmail.com" target="_blank">
+                    <i class="fab fa-lg fa-google"></i>
+                </a>
+                <a class="text-reset me-3" href="https://www.linkedin.com/in/furkan-meraloglu-a78ba9129/" target="_blank">
+                    <i class="fab fa-lg fa-linkedin"></i>
+                </a>
+                <a class="text-reset me-3" href="https://twitter.com/furkanmeraloglu" target="_blank">
+                    <i class="fab fa-lg fa-twitter"></i>
+                </a>
+                <a class="text-reset me-3" href="https://www.instagram.com/fmeraloglu/" target="_blank">
+                    <i class="fab fa-lg fa-instagram"></i>
+                </a>
+                <a class="text-reset me-3" href="https://www.facebook.com/furkan.meraloglu.9" target="_blank">
+                    <i class="fab fa-lg fa-facebook"></i>
+                </a>
+            </div>
+            <!-- Social Media Links End -->
         </div>
-        <!-- Collapsible wrapper -->
-
-        <!-- Right elements -->
-        <div class="d-flex align-items-center">
-          <!-- Icon -->
-          <a class="text-reset me-3" href="#">
-            <i class="fas fa-shopping-cart"></i>
-          </a>
-
-          <!-- Notifications -->
-          <a
-                  class="text-reset me-3 dropdown-toggle hidden-arrow"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-mdb-toggle="dropdown"
-                  aria-expanded="false"
-          >
-            <i class="fas fa-bell"></i>
-            <span class="badge rounded-pill badge-notification bg-danger">1</span>
-          </a>
-          <ul
-                  class="dropdown-menu dropdown-menu-end"
-                  aria-labelledby="navbarDropdownMenuLink"
-          >
-            <li>
-              <a class="dropdown-item" href="#">Some news</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Another news</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </li>
-          </ul>
-
-          <!-- Avatar -->
-          <a
-                  class="dropdown-toggle d-flex align-items-center hidden-arrow"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-mdb-toggle="dropdown"
-                  aria-expanded="false"
-          >
-            <img
-                    src="https://mdbootstrap.com/img/new/avatars/2.jpg"
-                    class="rounded-circle"
-                    height="25"
-                    alt=""
-                    loading="lazy"
-            />
-          </a>
-          <ul
-                  class="dropdown-menu dropdown-menu-end"
-                  aria-labelledby="navbarDropdownMenuLink"
-          >
-            <li>
-              <a class="dropdown-item" href="#">My profile</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Settings</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Logout</a>
-            </li>
-          </ul>
-        </div>
-        <!-- Right elements -->
-      </div>
-      <!-- Container wrapper -->
+        <!-- Container wrapper -->
     </nav>
     <!-- Navbar -->
-  </header>
-    <!-- Start your project here-->
-    <div class="container">
-      <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
-        <div class="text-center">
-          <img
-            class="mb-4"
-            src="https://mdbootstrap.com/img/logo/mdb-transparent-250px.png"
-            style="width: 250px; height: 90px;"
-          />
-          <h5 class="mb-3">Thank you for using our product. We're glad you're with us.</h5>
-          <p class="mb-3">Furkan Meraloğlu</p>
-          <a
-            class="btn btn-primary btn-lg"
-            href="https://mdbootstrap.com/docs/standard/getting-started/"
-            target="_blank"
-            role="button"
-            >Personal Website</a
-          >
-        </div>
-      </div>
-    </div>
-    <!-- End your project here-->
 
-    <!-- MDB -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-    <!-- Custom scripts -->
-    <script type="text/javascript"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-  </body>
+    <!-- BG Image Start -->
+    <div id="intro" class="bg-image">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
+            <div class="container d-flex align-items-center justify-content-center text-center h-100">
+                    <div class="text-white">
+                        <h1 class="mb-3"><span class="typing"></span> Ben Furkan <i class="far fa-smile"></i></h1>
+                        <a class="btn btn-outline-light btn-rounded btn-lg m-1" href="https://github.com/furkanmeraloglu?tab=repositories"
+                           role="button"
+                           rel="nofollow" target="_blank"><i class="fab fa-lg fa-github" style="margin-right: 5px"></i>Projelerim</a>
+                        <a class="btn btn-outline-light btn-rounded btn-lg m-1" href="#"
+                           target="_blank"
+                           role="button"><i class="far fa-newspaper" style="margin-right: 5px"></i>Yazılarım</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- BG Image End -->
+</header>
+
+<!-- Navigation Part -->
+
+<!-- Main Part -->
+
+<main>
+
+</main>
+
+
+<!-- Main Part -->
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Section: Links  -->
+    <section id="footer">
+        <div id="footerBreak"></div>
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        <i class="fas fa-gem me-3"></i>Company name
+                    </h6>
+                    <p>
+                        Here you can use rows and columns to organize your footer content. Lorem ipsum
+                        dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Products
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">Angular</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">React</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Vue</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Laravel</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Useful links
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">Pricing</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Settings</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Orders</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Help</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Contact
+                    </h6>
+                    <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                    <p>
+                        <i class="fas fa-envelope me-3"></i>
+                        info@example.com
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                    <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2021 Copyright |
+        <a class="text-reset fw-bold" href="https://github.com/furkanmeraloglu" target="_blank">Furkan Meraloğlu</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+<!-- End your project here-->
+
+<!-- MDB -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- Custom scripts -->
+<script type="text/javascript" src="js/main.js"></script>
+</body>
 </html>

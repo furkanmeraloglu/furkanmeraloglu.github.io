@@ -1,0 +1,49 @@
+/* Header Styling Start */
+.nav-item .nav-link {
+    color: #202844;
+    font-size: large;
+}
+
+.navbar.sticky{
+    color: white !important;
+    background: #3d5972;
+    transition: 0.5s;
+}
+.navbar.sticky .nav-item .nav-link{
+    color: white;
+}
+html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+#intro {
+    background: url('../img/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+}
+.mask {
+    background: linear-gradient(
+            45deg,
+            rgba(22, 223, 197, 0.5),
+            rgba(63, 11, 210, 0.5) 100%
+    );
+}
+#intro .mask .container .text-white .mb-3 span{
+    color:  #222944;
+}
+/* Header Styling End */
+
+/* Button Hover Styling Start */
+.btn.btn-outline-light.btn-rounded {
+    box-shadow: inset 0 0 0 0 #222944;
+}
+.btn.btn-outline-light.btn-rounded:hover{
+    box-shadow: inset 160px 0 0 0 #222944;
+}
+/* Button Hover Styling End */
+
+
