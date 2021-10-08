@@ -13,7 +13,7 @@
 }
 .fab:hover{
     color: #222944 !important;
-    transition: ease 0.5s;
+    transition: ease 0.3s;
 }
 .navbar-light {
     color: white;
@@ -28,6 +28,12 @@
 }
 .navbar-toggler{
     color: white !important;
+}
+
+@media (max-width: 993px) {
+    #logo{
+        display: none;
+    }
 }
 
 html,
