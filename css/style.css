@@ -223,7 +223,7 @@ header,
 
 /* Education Section Styling End */
 
-/* Education Section Styling Start */
+/* Experience Section Styling Start */
 #experience .bg-image{
     height: 45rem;
     background: linear-gradient(
@@ -235,27 +235,30 @@ header,
     position: relative;
 }
 #experience{
-    height: 100vh;
+    height: 100%;
 }
 #experienceTitle{
     margin-top:-35rem;
     margin-bottom:-35rem;
 }
 #experiencePic{
-    margin-top: -35rem;
+    margin-top: -32rem;
     padding: .7rem;
     width: 38rem;
     height: 38rem;
 }
 #experienceList{
-    margin-top:-35rem;
+    margin-top:-32rem;
     list-style: none;
 }
-#experienceList ul li span{
-    horiz-align: center;
+#experienceList .list-group-item{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#experienceList .list-group-item span{
     color: #222944;
-    padding-bottom: 0.6rem;
-    padding-left: 1.2rem;
+    margin-left: 1rem;
 }
 #experienceList .experience-logo{
     text-align: center;
@@ -264,9 +267,13 @@ header,
     line-height: 1.5;
     font-size: 2rem;
 }
+/* Experience Section Styling End */
+
+/* References Section Styling End */
 
 
-/* Education Section Styling End */
+
+/* References Section Styling End */
 
 
 
@@ -300,6 +307,11 @@ header,
 }
 @media (max-width: 1024px) {
     #about{
+    }
+}
+@media (max-width: 993px) {
+    #experienceList {
+        margin-top: 0;
     }
 }
 
