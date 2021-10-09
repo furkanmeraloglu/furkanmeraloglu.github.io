@@ -26,6 +26,7 @@
     height: 2rem;
 }
 
+
 /* Navbar Styling Start */
 
 .nav-item .nav-link {
@@ -147,8 +148,6 @@ header,
 #about .aboutContent a{
     color: crimson;
 }
-
-
 /* About Section Styling End */
 
 /* Education Section Styling Start */
@@ -224,8 +223,50 @@ header,
 
 /* Education Section Styling End */
 
+/* Education Section Styling Start */
+#experience .bg-image{
+    height: 45rem;
+    background: linear-gradient(
+            45deg,
+            rgba(22, 223, 197, 0.5),
+            rgba(63, 11, 210, 0.5) 100%
+    );
+    clip-path: polygon(50% 10%, 100% 0, 50% 17%, 0 0);
+    position: relative;
+}
+#experience{
+    height: 100vh;
+}
+#experienceTitle{
+    margin-top:-35rem;
+    margin-bottom:-35rem;
+}
+#experiencePic{
+    margin-top: -35rem;
+    padding: .7rem;
+    width: 38rem;
+    height: 38rem;
+}
+#experienceList{
+    margin-top:-35rem;
+    list-style: none;
+}
+#experienceList ul li span{
+    horiz-align: center;
+    color: #222944;
+    padding-bottom: 0.6rem;
+    padding-left: 1.2rem;
+}
+#experienceList .experience-logo{
+    text-align: center;
+    width: 40px;
+    height: 48px;
+    line-height: 1.5;
+    font-size: 2rem;
+}
 
 
+/* Education Section Styling End */
 
 
 
