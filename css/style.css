@@ -7,6 +7,7 @@
     --bg-color: #0f0f0f;
     --white: #ffffff;
     --midnight: #104f55;
+    --sma: #3d5972;
 
     /* gradient color   */
     --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
@@ -18,6 +19,10 @@
     --Josefin : 'Josefin', cursive;
     --Lexend: 'Lexend', cursive;
     --Livvic : 'Livvic', cursive;
+}
+
+section{
+    height: 100%;
 }
 .container{
     scroll-snap-type: y mandatory;
@@ -115,16 +120,12 @@ header,
     color: #222944 !important;
     transition: ease 0.5s;
 }
-.fab:hover{
-    color: #222944 !important;
-    transition: ease 0.3s;
-}
 /* Welcome Page Styling End */
 
 /* About Section Styling Start */
 #about{
     background: url("../assets/img/Abract01.png") no-repeat right;
-    padding-top: 5rem;
+    padding-top: 8rem;
 }
 #profilePic{
     width: 25rem;
@@ -152,10 +153,12 @@ header,
 
 /* Education Section Styling Start */
 #education{
+    align-items: center;
     padding-top: 4rem;
     scroll-snap-align: start;
 }
 #educationTitle {
+    padding-bottom: 1.5rem;
     font-family: var(--Lexend);
     font-weight: 500;
 }
@@ -198,28 +201,6 @@ header,
 #education .card .card-footer{
     font-family: var(--Livvic);
 }
-#education .container .owl-nav{
-    position: absolute;
-    bottom: 0;
-    margin: 10px;
-    width: 100%;
-}
-
-.owl-nav .owl-prev .owl-nav-prev,
-.owl-nav .owl-next .owl-nav-next{
-    color: var(--text-gray);
-    background: transparent;
-    font-size: 1rem;
-}
-
-.owl-theme .owl-nav [class*='owl-']:hover{
-    background: transparent;
-    color: var(--midnight);
-}
-
-.owl-theme .owl-nav [class*='owl-']{
-    outline: none;
-}
 
 /* Education Section Styling End */
 
@@ -242,13 +223,13 @@ header,
     margin-bottom:-35rem;
 }
 #experiencePic{
-    margin-top: -32rem;
-    padding: .7rem;
+    margin-top: -35rem;
+    padding: .5rem;
     width: 38rem;
     height: 38rem;
 }
 #experienceList{
-    margin-top:-32rem;
+    margin-top:-35rem;
     list-style: none;
 }
 #experienceList .list-group-item{
@@ -269,16 +250,128 @@ header,
 }
 /* Experience Section Styling End */
 
-/* References Section Styling End */
+/* Projects Section Styling End */
 
 
+#projectsTitle{
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+#projects .container .owl-nav{
+    position: absolute;
+    top: 0;
+    margin: 10px;
+    width: 100%;
+}
+#projects .projects-content{
+    margin: 1.2rem;
+    width: 38rem;
+    height: 35rem;
+}
+#projects .projects-content .card{
+    height: 100%;
+}
+#projects .projects-content .img-fluid.fondue {
+    height: 34rem;
+}
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next{
+    color: var(--text-gray);
+    background: transparent;
+    font-size: 1rem;
+}
 
-/* References Section Styling End */
+.owl-theme .owl-nav [class*='owl-']:hover{
+    background: transparent;
+    color: var(--midnight);
+}
+
+.owl-theme .owl-nav [class*='owl-']{
+    outline: none;
+}
+
+/* Projects Section Styling End */
+
+/* Blog Section Styling Start */
+#blog{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+#blog .blog-title{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.swiper {
+    width: 100%;
+    height: 50vh;
+    background: #000;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 60px;
+}
+
+.parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+}
+
+.swiper-slide .title {
+    font-size: 41px;
+    font-weight: 300;
+}
+
+.swiper-slide .subtitle {
+    font-size: 21px;
+}
+
+.swiper-slide .text {
+    font-size: 14px;
+    max-width: 100%;
+    line-height: 1.3;
+}
+/* Blog Section Styling End */
 
 
-
+/* Footer Styling Start */
+footer{
+    padding-top: 1rem;
+    margin-bottom: -3rem;
+}
+/* Footer Styling End */
 
 /* Button Hover Styling Start */
+#topBtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 15px;
+    transition: 0.5s ease;
+}
+.fab:hover{
+    color: #222944 !important;
+    transition: ease 0.3s;
+}
+footer .fab:hover{
+    color: var(--mdb-blue) !important;
+    transition: ease 0.3s;
+}
 .btn.btn-outline-light.btn-rounded {
     font-family: var(--Lexend);
     box-shadow: inset 0 0 0 0 #222944;
@@ -304,16 +397,20 @@ header,
     #logo{
         display: none;
     }
-}
-@media (max-width: 1024px) {
-    #about{
+    #profilePic{
+        margin-bottom: 2rem;
     }
-}
-@media (max-width: 993px) {
     #experienceList {
-        margin-top: 0;
+        margin-top: -3rem;
+    }
+    #educationPic{
+        padding-top: 2rem;
+    }
+    #about{
+        padding-top: 5rem;
     }
 }
+
 
 /* Media Queries End */
 

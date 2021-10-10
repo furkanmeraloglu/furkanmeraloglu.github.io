@@ -8,7 +8,7 @@ $(document).ready(function () {
     })
 })
 
-var typed = new Typed(".typing", {
+const typed = new Typed(".typing", {
     strings: ["Merhaba!", "Hello!", "Hola!", "Bonjour!", "Hallo!"],
     typeSpeed: 100,
     backSpeed: 60,
@@ -21,7 +21,22 @@ $('.navbar-collapse a').click(function () {
 
 
 
+<!-- Scroll Top Button -->
 
+const myButton = document.getElementById('topBtn');
+window.onscroll = function() {scrollFunction()};
+function scrollFunction(){
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        myButton.style.display = "block";
+    } else {
+        myButton.style.display = "none";
+    }
+}
+
+function topFunction(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 
 /* IE/Safari Scroll Smoothness */
 
@@ -52,14 +67,33 @@ $('.owl-carousel').owlCarousel({
             nav:true
         },
         750:{
-            items:2,
+            items:1,
             nav:false
         },
         1200:{
-            items:3,
+            items:2,
             nav:true,
             loop:true,
             animateOut: true
         }
     }
 });
+
+const swiper = new Swiper(".mySwiper", {
+    speed: 600,
+    loop:true,
+    autoplay: {
+        delay: 5000,
+    },
+    parallax: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
+

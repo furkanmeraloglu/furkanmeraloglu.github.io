@@ -12,5 +12,6 @@
     <orderEntry type="library" name="jquery-3.6.0" level="application" />
     <orderEntry type="library" name="typed.js" level="application" />
     <orderEntry type="library" name="smoothscroll-polyfill" level="application" />
+    <orderEntry type="library" name="swiper" level="application" />
   </component>
 </module>
